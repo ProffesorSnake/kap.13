@@ -21,11 +21,29 @@ namespace övning132
 
         private void Btnkontroll_Click(object sender, EventArgs e)
         {
-            string[] ord = new string[tbxord.Text.Length];
+            //string[] ord = new string[tbxord.Text.Length];
+            string ord = tbxord.Text;
+            string omväntord = "";
 
             for(int i = 0; i < tbxord.Text.Length; i++)
             {
+                bokstäver.Push(ord[i].ToString());
+                omväntord += bokstäver.Pop();
+            }
+
+            //for(int i = 0; i < tbxord.Text.Length; i++)
+            //{
                 
+            //}
+
+            if(omväntord == ord)
+            {
+                tbxres.Text = ord + " är en palindrom";
+            }
+            else
+            {
+                 tbxres.Text = ord + " är inte en palindrom";
+
             }
         }
     }

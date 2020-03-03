@@ -54,7 +54,7 @@
             // 
             this.tbxres.Location = new System.Drawing.Point(292, 167);
             this.tbxres.Name = "tbxres";
-            this.tbxres.Size = new System.Drawing.Size(100, 20);
+            this.tbxres.Size = new System.Drawing.Size(205, 20);
             this.tbxres.TabIndex = 2;
             // 
             // Form1
